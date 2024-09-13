@@ -68,15 +68,16 @@ function App() {
   // refs
 
   const header2Ref = useRef(null);
+  const headerMenuLeft = useRef(null);
+  const navBarRef = useRef(null);
   const bodySliderRef = useRef(null);
-  const buttonRef = useRef(null);
   const page1Ref = useRef(null);
   const page2Ref = useRef(null);
   const page3Ref = useRef(null);
   const page4Ref = useRef(null);
   const page5Ref = useRef(null);
-  const navBarRef = useRef(null);
-  const headerMenuLeft = useRef(null);
+  const certificacoesRef = useRef(null);
+  const buttonRef = useRef(null);
 
   function changeLanguageToPT() {
     const myButton = buttonRef.current.querySelector("#myButton");
@@ -132,6 +133,9 @@ function App() {
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
 
+    const certificacoesH1 =
+      certificacoesRef.current.querySelector("#certificacoesH1");
+
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
     header2Unidades.textContent = `${t("HEADER2_UNIDADES_PT")}`;
@@ -140,7 +144,6 @@ function App() {
     header2Inovacao.textContent = `${t("HEADER2_INOVACAO_PT")}`;
 
     bodySliderH1.textContent = `${t("BODYSLIDER_H1_PT")}`;
-    myButton.textContent = "oiiiii";
 
     // -----------------------------------------PAGE1---------------------------------------------
 
@@ -169,6 +172,8 @@ function App() {
 
     page5H1.textContent = `${t("PAGE5H1_PT")}`;
     page5H3.textContent = `${t("PAGE5H3_PT")}`;
+
+    certificacoesH1.textContent = `${t("CERTIFICACOESH1_PT")}`;
   }
 
   function responsiveChangeLanguageToPT() {
@@ -220,6 +225,9 @@ function App() {
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
 
+    const certificacoesH1 =
+      certificacoesRef.current.querySelector("#certificacoesH1");
+
     sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
     sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
     sideUnidades.textContent = `${t("HEADER2_UNIDADES_PT")}`;
@@ -256,6 +264,8 @@ function App() {
 
     page5H1.textContent = `${t("PAGE5H1_PT")}`;
     page5H3.textContent = `${t("PAGE5H3_PT")}`;
+
+    certificacoesH1.textContent = `${t("CERTIFICACOESH1_PT")}`;
   }
 
   function changeLanguageToEN() {
@@ -311,6 +321,9 @@ function App() {
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
 
+    const certificacoesH1 =
+      certificacoesRef.current.querySelector("#certificacoesH1");
+
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
     header2Unidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
@@ -340,6 +353,8 @@ function App() {
 
     page5H1.textContent = `${t("PAGE5H1_EN")}`;
     page5H3.textContent = `${t("PAGE5H3_EN")}`;
+
+    certificacoesH1.textContent = `${t("CERTIFICACOESH1_EN")}`;
   }
 
   function responsiveChangeLanguageToEN() {
@@ -392,6 +407,9 @@ function App() {
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
 
+    const certificacoesH1 =
+      certificacoesRef.current.querySelector("#certificacoesH1");
+
     sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
     sideUnidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
@@ -421,6 +439,8 @@ function App() {
 
     page5H1.textContent = `${t("PAGE5H1_EN")}`;
     page5H3.textContent = `${t("PAGE5H3_EN")}`;
+
+    certificacoesH1.textContent = `${t("CERTIFICACOESH1_EN")}`;
   }
 
   return (
@@ -451,7 +471,7 @@ function App() {
         <Page3 page3Ref={page3Ref} />
         <Page4 page4Ref={page4Ref} />
         <Page5 page5Ref={page5Ref} />
-        <Certificacoes />
+        <Certificacoes certificacoesRef={certificacoesRef} />
         <Footer />
       </MyContext.Provider>
     </div>

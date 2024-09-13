@@ -4,10 +4,13 @@ import c3 from "../img/certificacoes/c-3.png";
 import c4 from "../img/certificacoes/c-4.png";
 import c5 from "../img/certificacoes/c-5.png";
 
-export function Certificacoes() {
+export function Certificacoes(props) {
   return (
-    <div className="relative w-[100vw] h-[80vh] ">
-      <h1 className="absolute z-10 w-[60%] h-[7%] top-[35%] left-[50%] translate-x-[-50%] text-[#696969] text-[30px] text-center font-bold --responsive--> md:text-[20px] sm:text-[17px]">
+    <div ref={props.certificacoesRef} className="relative w-[100vw] h-[80vh] ">
+      <h1
+        id="certificacoesH1"
+        className="absolute z-10 w-[60%] h-[7%] top-[35%] left-[50%] translate-x-[-50%] text-[#696969] text-[30px] text-center font-bold --responsive--> md:text-[20px] sm:text-[17px]"
+      >
         Em constante conformidade com as certificações atuais
       </h1>
       <li className="absolute overflow-hidden w-[90%] h-[70%] bg-white left-[50%] top-[50%] translate-x-[-50%] translate-y-[-35%] border border-l-0 border-r-0 list-none --responsive--> ">
