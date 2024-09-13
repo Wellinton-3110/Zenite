@@ -65,10 +65,10 @@ export function HeaderMenu(props) {
         </i>
       </div>
 
-      <div className="relative ">
+      <div className="relative">
         <li
           id="closeMenu"
-          className="hidden list-none absolute z-10 w-[85vw] h-[98vh] flex flex-col p-[20px] bg-white"
+          className="hidden list-none fixed z-20 w-[85vw] h-[98vh] flex flex-col p-[20px] bg-white"
         >
           <i className="w-[100%] bg-white ">
             <IoMdClose
