@@ -91,16 +91,31 @@ export function HeaderMenu(props) {
               </h1>
             </span>
           </i>
-          <i className="mt-[80px] ml-[40px] text-black/70">SOBRE NÓS</i>
-          <i className="mt-[20px] ml-[40px] text-black/70">CONCEITO FUTURE</i>
-          <i className="mt-[20px] ml-[40px] text-black/70">
+          <i
+            id="sideMenuSobreNos"
+            className="mt-[80px] ml-[40px] text-black/70"
+          >
+            SOBRE NÓS
+          </i>
+          <i
+            id="sideMenuConceito"
+            className="mt-[20px] ml-[40px] text-black/70"
+          >
+            CONCEITO ZENITE
+          </i>
+          <i id="sideUnidades" className="mt-[20px] ml-[40px] text-black/70">
             UNIDADE DE NEGÓCIO
           </i>
-          <i className="mt-[20px] ml-[40px] text-black/70">COMPETÊNCIAS</i>
-          <i className="mt-[20px] ml-[40px] text-black/70">
+          <i
+            id="sideCompetencias"
+            className="mt-[20px] ml-[40px] text-black/70"
+          >
+            COMPETÊNCIAS
+          </i>
+          <i id="sideAgencia" className="mt-[20px] ml-[40px] text-black/70">
             AGÊNCIA DE INVESTIMENTO E DESENVOLVIMENTO
           </i>
-          <i className="mt-[20px] ml-[40px] text-black/70">
+          <i id="sideInovacao" className="mt-[20px] ml-[40px] text-black/70">
             INOVAÇÃO E TECNOLOGIA
           </i>
           <i className="relative mt-[20px] ml-[40px] text-black/70 after:w-[80px] after:h-[2px] after:bg-gradient-to-r from-[#286993] to-[#41BDBA] hover:text-black after:block after:relative after:left-[0%] after:top-[200%]">

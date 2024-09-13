@@ -44,7 +44,7 @@ export function Header2() {
         {t("HEADER2_SOBRENOS_PT")}
         <li
           id="sobreNos"
-          className="hidden absolute w-[86vw] h-[77vh] z-30 p-[50px] top-[100%] flex flex-col left-[50vw] translate-x-[-80%] bg-white text-black/40 list-none"
+          className="hidden absolute w-[87vw] h-[80vh] z-30 p-[50px] top-[100%] flex flex-col left-[50vw] translate-x-[-80%] bg-white text-black/40 list-none"
         >
           <i className="text-[19px] h-[30px] font-normal ml-[20%] mb-[25px] hover:before:w-[80px] hover:before:h-[2.5px] hover:before:bg-gradient-to-r from-[#286993] to-[#41BDBA] hover:text-black hover:before:block hover:before:relative hover:before:left-[-12%] hover:before:top-[50%]">
             HISTÓRIA

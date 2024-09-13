@@ -172,7 +172,20 @@ function App() {
   }
 
   function responsiveChangeLanguageToPT() {
-    const myButton = buttonRef.current.querySelector("#myButton");
+    const sideMenuSobreNos =
+      headerMenuLeft.current.querySelector("#sideMenuSobreNos");
+
+    const sideMenuConceito =
+      headerMenuLeft.current.querySelector("#sideMenuConceito");
+
+    const sideUnidades = headerMenuLeft.current.querySelector("#sideUnidades");
+
+    const sideCompetencias =
+      headerMenuLeft.current.querySelector("#sideCompetencias");
+
+    const sideAgencia = headerMenuLeft.current.querySelector("#sideAgencia");
+
+    const sideInovacao = headerMenuLeft.current.querySelector("#sideInovacao");
 
     const bodySliderH1 = bodySliderRef.current.querySelector("#bodySliderH1");
 
@@ -207,8 +220,14 @@ function App() {
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
 
+    sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
+    sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
+    sideUnidades.textContent = `${t("HEADER2_UNIDADES_PT")}`;
+    sideCompetencias.textContent = `${t("HEADER2_COMPETENCIAS_PT")}`;
+    sideAgencia.textContent = `${t("HEADER2_AGENCIA_PT")}`;
+    sideInovacao.textContent = `${t("HEADER2_INOVACAO_PT")}`;
+
     bodySliderH1.textContent = `${t("BODYSLIDER_H1_PT")}`;
-    myButton.textContent = "oiiiii";
 
     // -----------------------------------------PAGE1---------------------------------------------
 
@@ -324,6 +343,21 @@ function App() {
   }
 
   function responsiveChangeLanguageToEN() {
+    const sideMenuSobreNos =
+      headerMenuLeft.current.querySelector("#sideMenuSobreNos");
+
+    const sideMenuConceito =
+      headerMenuLeft.current.querySelector("#sideMenuConceito");
+
+    const sideUnidades = headerMenuLeft.current.querySelector("#sideUnidades");
+
+    const sideCompetencias =
+      headerMenuLeft.current.querySelector("#sideCompetencias");
+
+    const sideAgencia = headerMenuLeft.current.querySelector("#sideAgencia");
+
+    const sideInovacao = headerMenuLeft.current.querySelector("#sideInovacao");
+
     const bodySliderH1 = bodySliderRef.current.querySelector("#bodySliderH1");
 
     const page1H1 = page1Ref.current.querySelector("#page1H1");
@@ -357,6 +391,13 @@ function App() {
 
     const page5H1 = page5Ref.current.querySelector("#page5H1");
     const page5H3 = page5Ref.current.querySelector("#page5H3");
+
+    sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
+    sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
+    sideUnidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
+    sideCompetencias.textContent = `${t("HEADER2_COMPETENCIAS_EN")}`;
+    sideAgencia.textContent = `${t("HEADER2_AGENCIA_EN")}`;
+    sideInovacao.textContent = `${t("HEADER2_INOVACAO_EN")}`;
 
     bodySliderH1.textContent = `${t("BODYSLIDER_H1_EN")}`;
 
