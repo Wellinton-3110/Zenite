@@ -5,7 +5,7 @@ const VideoPlayer = () => (
   <ReactPlayer
     width="100vw"
     height="100%"
-    url="/engenhariazenite/futureVideo.mp4"
+    url="/futureVideo.mp4"
     muted={true}
     controls={true}
     playing={true}
