@@ -1,0 +1,13 @@
+.Body1 {
+  background-image: url("../img/FutureBGPage2.jpg");
+  background-position-y: 13vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 90vh;
+}
+
+@media only screen and (max-width: 500px) {
+  .Body1 {
+    background-size: 100vw 80vh;
+    background-position-y: 7vh;
+  }
+}

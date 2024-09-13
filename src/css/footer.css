@@ -1,0 +1,50 @@
+.whiteLine::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin-left: 15px;
+}
+
+.whiteLine-none::after {
+  content: none;
+}
+
+.Email {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px white solid;
+  outline: none;
+}
+
+.Email::placeholder {
+  color: white;
+  font-size: 17px;
+}
+
+/*tela média logo media*/
+
+@media only screen and (max-width: 1300px) {
+  .Main-Sede {
+    padding: 20px;
+  }
+  .whiteLine::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .Newsletter::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-left: 15px;
+  }
+}

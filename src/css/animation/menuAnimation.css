@@ -1,0 +1,17 @@
+.menuSlideAnimation {
+  animation: rightSlide 1.2s linear forwards;
+}
+
+@keyframes rightSlide {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  75% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(-1200px);
+    display: none;
+  }
+}
