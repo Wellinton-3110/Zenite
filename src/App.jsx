@@ -151,6 +151,16 @@ function App() {
     const footerH1Subscrever = footerRef.current.querySelector(
       "#footerH1Subscrever"
     );
+    const footerH3Termos = footerRef.current.querySelector("#footerH3Termos");
+    const footerH3Cookies = footerRef.current.querySelector("#footerH3Cookies");
+    const footerH3Privacidade = footerRef.current.querySelector(
+      "#footerH3Privacidade"
+    );
+    const footerH3Oportunidades = footerRef.current.querySelector(
+      "#footerH3Oportunidades"
+    );
+    const footerH5Direitos =
+      footerRef.current.querySelector("#footerH5Direitos");
 
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
@@ -199,6 +209,11 @@ function App() {
     footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_PT")}`;
     footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_PT")}`;
     footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_PT")}`;
+    footerH3Termos.textContent = `${t("FOOTERTERMOS_PT")}`;
+    footerH3Cookies.textContent = `${t("FOOTERCOOKIES_PT")}`;
+    footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_PT")}`;
+    footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_PT")}`;
+    footerH5Direitos.textContent = `${t("FOOTERDIREITOS_PT")}`;
   }
 
   function responsiveChangeLanguageToPT() {
@@ -253,6 +268,31 @@ function App() {
     const certificacoesH1 =
       certificacoesRef.current.querySelector("#certificacoesH1");
 
+    const footerH1Sede = footerRef.current.querySelector("#footerH1Sede");
+    const footerH1Links = footerRef.current.querySelector("#footerH1Links");
+    const footerH1Siganos = footerRef.current.querySelector("#footerH1Siganos");
+    const footerH2Contatos =
+      footerRef.current.querySelector("#footerH2Contatos");
+    const footerH2SobreNos =
+      footerRef.current.querySelector("#footerH2SobreNos");
+    const footerH2Lideranca =
+      footerRef.current.querySelector("#footerH2Lideranca");
+    const footerH2Manifesto =
+      footerRef.current.querySelector("#footerH2Manifesto");
+    const footerH1Subscrever = footerRef.current.querySelector(
+      "#footerH1Subscrever"
+    );
+    const footerH3Termos = footerRef.current.querySelector("#footerH3Termos");
+    const footerH3Cookies = footerRef.current.querySelector("#footerH3Cookies");
+    const footerH3Privacidade = footerRef.current.querySelector(
+      "#footerH3Privacidade"
+    );
+    const footerH3Oportunidades = footerRef.current.querySelector(
+      "#footerH3Oportunidades"
+    );
+    const footerH5Direitos =
+      footerRef.current.querySelector("#footerH5Direitos");
+
     sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
     sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
     sideUnidades.textContent = `${t("HEADER2_UNIDADES_PT")}`;
@@ -291,6 +331,20 @@ function App() {
     page5H3.textContent = `${t("PAGE5H3_PT")}`;
 
     certificacoesH1.textContent = `${t("CERTIFICACOESH1_PT")}`;
+
+    footerH1Sede.textContent = `${t("FOOTERSEDE_PT")}`;
+    footerH1Links.textContent = `${t("FOOTERLINKS_PT")}`;
+    footerH1Siganos.textContent = `${t("FOOTERSIGANOS_PT")}`;
+    footerH2Contatos.textContent = `${t("FOOTERCONTATOS_PT")}`;
+    footerH2SobreNos.textContent = `${t("FOOTERSOBRENOS_PT")}`;
+    footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_PT")}`;
+    footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_PT")}`;
+    footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_PT")}`;
+    footerH3Termos.textContent = `${t("FOOTERTERMOS_PT")}`;
+    footerH3Cookies.textContent = `${t("FOOTERCOOKIES_PT")}`;
+    footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_PT")}`;
+    footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_PT")}`;
+    footerH5Direitos.textContent = `${t("FOOTERDIREITOS_PT")}`;
   }
 
   function changeLanguageToEN() {
@@ -363,6 +417,16 @@ function App() {
     const footerH1Subscrever = footerRef.current.querySelector(
       "#footerH1Subscrever"
     );
+    const footerH3Termos = footerRef.current.querySelector("#footerH3Termos");
+    const footerH3Cookies = footerRef.current.querySelector("#footerH3Cookies");
+    const footerH3Privacidade = footerRef.current.querySelector(
+      "#footerH3Privacidade"
+    );
+    const footerH3Oportunidades = footerRef.current.querySelector(
+      "#footerH3Oportunidades"
+    );
+    const footerH5Direitos =
+      footerRef.current.querySelector("#footerH5Direitos");
 
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
@@ -404,6 +468,11 @@ function App() {
     footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_EN")}`;
     footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_EN")}`;
     footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_EN")}`;
+    footerH3Termos.textContent = `${t("FOOTERTERMOS_EN")}`;
+    footerH3Cookies.textContent = `${t("FOOTERCOOKIES_EN")}`;
+    footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_EN")}`;
+    footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_EN")}`;
+    footerH5Direitos.textContent = `${t("FOOTERDIREITOS_EN")}`;
   }
 
   function responsiveChangeLanguageToEN() {
@@ -459,6 +528,31 @@ function App() {
     const certificacoesH1 =
       certificacoesRef.current.querySelector("#certificacoesH1");
 
+    const footerH1Sede = footerRef.current.querySelector("#footerH1Sede");
+    const footerH1Links = footerRef.current.querySelector("#footerH1Links");
+    const footerH1Siganos = footerRef.current.querySelector("#footerH1Siganos");
+    const footerH2Contatos =
+      footerRef.current.querySelector("#footerH2Contatos");
+    const footerH2SobreNos =
+      footerRef.current.querySelector("#footerH2SobreNos");
+    const footerH2Lideranca =
+      footerRef.current.querySelector("#footerH2Lideranca");
+    const footerH2Manifesto =
+      footerRef.current.querySelector("#footerH2Manifesto");
+    const footerH1Subscrever = footerRef.current.querySelector(
+      "#footerH1Subscrever"
+    );
+    const footerH3Termos = footerRef.current.querySelector("#footerH3Termos");
+    const footerH3Cookies = footerRef.current.querySelector("#footerH3Cookies");
+    const footerH3Privacidade = footerRef.current.querySelector(
+      "#footerH3Privacidade"
+    );
+    const footerH3Oportunidades = footerRef.current.querySelector(
+      "#footerH3Oportunidades"
+    );
+    const footerH5Direitos =
+      footerRef.current.querySelector("#footerH5Direitos");
+
     sideMenuSobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     sideMenuConceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
     sideUnidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
@@ -490,6 +584,20 @@ function App() {
     page5H3.textContent = `${t("PAGE5H3_EN")}`;
 
     certificacoesH1.textContent = `${t("CERTIFICACOESH1_EN")}`;
+
+    footerH1Sede.textContent = `${t("FOOTERSEDE_EN")}`;
+    footerH1Links.textContent = `${t("FOOTERLINKS_EN")}`;
+    footerH1Siganos.textContent = `${t("FOOTERSIGANOS_EN")}`;
+    footerH2Contatos.textContent = `${t("FOOTERCONTATOS_EN")}`;
+    footerH2SobreNos.textContent = `${t("FOOTERSOBRENOS_EN")}`;
+    footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_EN")}`;
+    footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_EN")}`;
+    footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_EN")}`;
+    footerH3Termos.textContent = `${t("FOOTERTERMOS_EN")}`;
+    footerH3Cookies.textContent = `${t("FOOTERCOOKIES_EN")}`;
+    footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_EN")}`;
+    footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_EN")}`;
+    footerH5Direitos.textContent = `${t("FOOTERDIREITOS_EN")}`;
   }
 
   return (

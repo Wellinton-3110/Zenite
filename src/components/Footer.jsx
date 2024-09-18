@@ -176,15 +176,26 @@ export function Footer(props) {
           {/* -------------------------------------- */}
 
           <footer className=" w-[70vw] h-[15vh] absolute top-[100%] left-[8VW] text-[13px] text-white font-light flex items-center justify-between border border-l-0 border-r-0 border-b-0 translate-y-[-100%] m-auto p-1 --responsive--> md:w-[85vw] md:h-[10vh] md:left-[3%] md:text-[10px] md:justify-around">
-            <h3 className="cursor-pointer">TERMOS E CONDIÇÕES</h3>
-            <h3 className="cursor-pointer">POLÍTICA DE COOKIES</h3>
-            <h3 className="cursor-pointer">POLÍTICA DE PRIVACIDADE</h3>
-            <h3 className="cursor-pointer">OPORTUNIDADES DE CARREIRA</h3>
+            <h3 id="footerH3Termos" className="cursor-pointer">
+              TERMOS E CONDIÇÕES
+            </h3>
+            <h3 id="footerH3Cookies" className="cursor-pointer">
+              POLÍTICA DE COOKIES
+            </h3>
+            <h3 id="footerH3Privacidade" className="cursor-pointer">
+              POLÍTICA DE PRIVACIDADE
+            </h3>
+            <h3 id="footerH3Oportunidades" className="cursor-pointer">
+              OPORTUNIDADES DE CARREIRA
+            </h3>
           </footer>
         </section>
       </div>
-      <h5 className="relative font-light text-[13px] --responsive--> md:text-[9px] md:mt-10 md:font-extralight">
-        FUTURE © 2024 - TODOS OS DIREITOS RESERVADOS
+      <h5
+        id="footerH5Direitos"
+        className="relative font-light text-[13px] --responsive--> md:text-[9px] md:mt-10 md:font-extralight"
+      >
+        ZENITE © 2024 - TODOS OS DIREITOS RESERVADOS
       </h5>
     </div>
   );
