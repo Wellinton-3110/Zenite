@@ -77,6 +77,7 @@ function App() {
   const page4Ref = useRef(null);
   const page5Ref = useRef(null);
   const certificacoesRef = useRef(null);
+  const footerRef = useRef(null);
   const buttonRef = useRef(null);
 
   function changeLanguageToPT() {
@@ -136,6 +137,21 @@ function App() {
     const certificacoesH1 =
       certificacoesRef.current.querySelector("#certificacoesH1");
 
+    const footerH1Sede = footerRef.current.querySelector("#footerH1Sede");
+    const footerH1Links = footerRef.current.querySelector("#footerH1Links");
+    const footerH1Siganos = footerRef.current.querySelector("#footerH1Siganos");
+    const footerH2Contatos =
+      footerRef.current.querySelector("#footerH2Contatos");
+    const footerH2SobreNos =
+      footerRef.current.querySelector("#footerH2SobreNos");
+    const footerH2Lideranca =
+      footerRef.current.querySelector("#footerH2Lideranca");
+    const footerH2Manifesto =
+      footerRef.current.querySelector("#footerH2Manifesto");
+    const footerH1Subscrever = footerRef.current.querySelector(
+      "#footerH1Subscrever"
+    );
+
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_PT")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_PT")}`;
     header2Unidades.textContent = `${t("HEADER2_UNIDADES_PT")}`;
@@ -174,6 +190,15 @@ function App() {
     page5H3.textContent = `${t("PAGE5H3_PT")}`;
 
     certificacoesH1.textContent = `${t("CERTIFICACOESH1_PT")}`;
+
+    footerH1Sede.textContent = `${t("FOOTERSEDE_PT")}`;
+    footerH1Links.textContent = `${t("FOOTERLINKS_PT")}`;
+    footerH1Siganos.textContent = `${t("FOOTERSIGANOS_PT")}`;
+    footerH2Contatos.textContent = `${t("FOOTERCONTATOS_PT")}`;
+    footerH2SobreNos.textContent = `${t("FOOTERSOBRENOS_PT")}`;
+    footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_PT")}`;
+    footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_PT")}`;
+    footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_PT")}`;
   }
 
   function responsiveChangeLanguageToPT() {
@@ -324,6 +349,21 @@ function App() {
     const certificacoesH1 =
       certificacoesRef.current.querySelector("#certificacoesH1");
 
+    const footerH1Sede = footerRef.current.querySelector("#footerH1Sede");
+    const footerH1Links = footerRef.current.querySelector("#footerH1Links");
+    const footerH1Siganos = footerRef.current.querySelector("#footerH1Siganos");
+    const footerH2Contatos =
+      footerRef.current.querySelector("#footerH2Contatos");
+    const footerH2SobreNos =
+      footerRef.current.querySelector("#footerH2SobreNos");
+    const footerH2Lideranca =
+      footerRef.current.querySelector("#footerH2Lideranca");
+    const footerH2Manifesto =
+      footerRef.current.querySelector("#footerH2Manifesto");
+    const footerH1Subscrever = footerRef.current.querySelector(
+      "#footerH1Subscrever"
+    );
+
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
     header2Unidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
@@ -355,6 +395,15 @@ function App() {
     page5H3.textContent = `${t("PAGE5H3_EN")}`;
 
     certificacoesH1.textContent = `${t("CERTIFICACOESH1_EN")}`;
+
+    footerH1Sede.textContent = `${t("FOOTERSEDE_EN")}`;
+    footerH1Links.textContent = `${t("FOOTERLINKS_EN")}`;
+    footerH1Siganos.textContent = `${t("FOOTERSIGANOS_EN")}`;
+    footerH2Contatos.textContent = `${t("FOOTERCONTATOS_EN")}`;
+    footerH2SobreNos.textContent = `${t("FOOTERSOBRENOS_EN")}`;
+    footerH2Lideranca.textContent = `${t("FOOTERLIDERANCA_EN")}`;
+    footerH2Manifesto.textContent = `${t("FOOTERMANIFESTO_EN")}`;
+    footerH1Subscrever.textContent = `${t("FOOTERNEWSLETTER_EN")}`;
   }
 
   function responsiveChangeLanguageToEN() {
@@ -472,7 +521,7 @@ function App() {
         <Page4 page4Ref={page4Ref} />
         <Page5 page5Ref={page5Ref} />
         <Certificacoes certificacoesRef={certificacoesRef} />
-        <Footer />
+        <Footer footerRef={footerRef} />
       </MyContext.Provider>
     </div>
   );

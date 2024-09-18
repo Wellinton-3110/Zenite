@@ -8,7 +8,7 @@ import { CgCloseR } from "react-icons/cg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 
-export function Footer() {
+export function Footer(props) {
   const [largura, setLargura] = useState(window.innerWidth);
   const [open, setOpen] = useState(false);
 
@@ -40,7 +40,10 @@ export function Footer() {
   }
 
   return (
-    <div className="Footer w-[100vw] h-[110vh] flex flex-col items-center relative --responsive--> md:h-[140vh]">
+    <div
+      ref={props.footerRef}
+      className="Footer w-[100vw] h-[110vh] flex flex-col items-center relative --responsive--> md:h-[140vh]"
+    >
       {/* --------------------Modal-------------------- */}
       <div
         id="Modal"
@@ -64,8 +67,11 @@ export function Footer() {
           </div>
 
           {/* ---------------Sede------------- */}
-          <div className="Main-Sede flex flex-col w-[350px] h-[355px] text-white text-center font-medium absolute z-10 top-[3vh] left-[22vw] --responsive--> md:flex md:h-[155px] md:w-[90vw] md:left-0 md:top-[15vh]">
-            <h1 className="whiteLine flex items-center mb-[70px] --responsive--> md:mb-[20px]">
+          <div className="Main-Sede flex flex-col w-[390px] h-[355px] text-white text-center font-medium absolute z-10 top-[3vh] left-[22vw] --responsive--> md:flex md:h-[155px] md:w-[90vw] md:left-0 md:top-[15vh]">
+            <h1
+              id="footerH1Sede"
+              className="whiteLine flex items-center mb-[70px] --responsive--> md:mb-[20px]"
+            >
               SEDE DO GRUPO ZENITE
             </h1>
             <h2 className="text-left text-[15px] font-light mb-2 md:text-[11px] md:mb-1 ----> tall:mb-0">
@@ -80,14 +86,14 @@ export function Footer() {
 
             <div className="flex absolute left-[15%] top-[60%] w-[210px] h-[30px] --responsive--> sm:left-[33%]">
               <div className="absolute top-[15%] w-[100px] cursor-pointer h-[28px] flex mr-[10px] items-center justify-center bg-white rounded-full text-[14px] text-[#41BDBA] font-mono --responsive--> tall:text-[12px] tall:w-[80px] tall:h-[25px]">
-                <h3>CONTATOS</h3>
+                <h3 id="footerH3Contatos">CONTATOS</h3>
               </div>
 
               <div
                 onClick={openModal}
                 className="absolute top-[15%] left-[50%] w-[100px] cursor-pointer h-[28px] flex items-center justify-center bg-white rounded-full text-[14px] text-[#41BDBA] font-mono --responsive--> tall:text-[12px] tall:w-[80px] tall:h-[25px]"
               >
-                <h3>VER NO MAPA</h3>
+                <h3 id="footerH3Mapa">VER NO MAPA</h3>
               </div>
             </div>
 
@@ -96,27 +102,45 @@ export function Footer() {
             </div>
           </div>
           {/* ---------------Links rapidos-------------- */}
-          <div className="Links flex flex-col w-[350px] h-[355px] text-white text-center font-medium absolute z-10 left-[45vw] top-[3vh] md:hidden">
-            <h1 className="Sede whiteLine flex items-center mb-[70px]">
+          <div className="Links flex flex-col w-[390px] h-[355px] text-white text-center font-medium absolute z-10 left-[48vw] top-[3vh] md:hidden">
+            <h1
+              id="footerH1Links"
+              className="Sede whiteLine flex items-center mb-[70px]"
+            >
               LINKS RÁPIDOS
             </h1>
-            <h2 className="text-left  text-[13px] cursor-pointer font-light mb-5">
-              CONTACTOS
+            <h2
+              id="footerH2Contatos"
+              className="text-left  text-[13px] cursor-pointer font-light mb-5"
+            >
+              CONTATOS
             </h2>
-            <h2 className="text-left text-[13px] cursor-pointer font-light mb-5">
+            <h2
+              id="footerH2SobreNos"
+              className="text-left text-[13px] cursor-pointer font-light mb-5"
+            >
               SOBRE NÓS
             </h2>
-            <h2 className="text-left text-[13px] cursor-pointer font-light mb-5">
+            <h2
+              id="footerH2Lideranca"
+              className="text-left text-[13px] cursor-pointer font-light mb-5"
+            >
               LIDERANÇA
             </h2>
-            <h2 className="text-left text-[13px] cursor-pointer font-light mb-5">
+            <h2
+              id="footerH2Manifesto"
+              className="text-left text-[13px] cursor-pointer font-light mb-5"
+            >
               MANIFESTO FUTURE
             </h2>
           </div>
 
           {/* -------------------Siga-nos------------------- */}
-          <div className="Siganos flex flex-col w-[350px] h-[355px] text-white text-center font-medium absolute z-10 left-[64vw] top-[1.5vh] --responsive--> md:p-[20px] md:w-[90vw] md:h-[25vh] md:top-[40vh] md:left-[0]">
-            <h1 className="whiteLine flex items-center mb-[35px] --responsive--> md:mb-[30px] md:relative md:w-[100%] tall:mt-3">
+          <div className="Siganos flex flex-col w-[390px] h-[355px] text-white text-center font-medium absolute z-10 left-[67vw] top-[1.5vh] --responsive--> md:p-[20px] md:w-[90vw] md:h-[25vh] md:top-[40vh] md:left-[0]">
+            <h1
+              id="footerH1Siganos"
+              className="whiteLine flex items-center mb-[35px] --responsive--> md:mb-[30px] md:relative md:w-[100%] tall:mt-3"
+            >
               SIGA-NOS
             </h1>
 
@@ -127,7 +151,10 @@ export function Footer() {
               <div className="ml-5 text-[15px] mb-10 cursor-pointer">
                 <h2>Linkedin</h2>
               </div>
-              <h1 className="Newsletter flex items-center justify-left absolute top-[90%] left-0 text-[14px] font-bold --responsive--> md:w-[100%] md:top-[90%]">
+              <h1
+                id="footerH1Subscrever"
+                className="Newsletter flex items-center justify-left absolute top-[90%] left-0 text-[14px] font-bold --responsive--> md:w-[100%] md:top-[90%]"
+              >
                 SUBSCREVER NEWSLETTER
               </h1>
             </div>
@@ -148,7 +175,7 @@ export function Footer() {
           </div>
           {/* -------------------------------------- */}
 
-          <footer className=" w-[70vw] h-[15vh] absolute top-[100%] left-20 text-[13px] text-white font-light flex items-center justify-between border border-l-0 border-r-0 border-b-0 translate-y-[-100%] m-auto p-1 --responsive--> md:w-[85vw] md:h-[10vh] md:left-[3%] md:text-[10px] md:justify-around">
+          <footer className=" w-[70vw] h-[15vh] absolute top-[100%] left-[8VW] text-[13px] text-white font-light flex items-center justify-between border border-l-0 border-r-0 border-b-0 translate-y-[-100%] m-auto p-1 --responsive--> md:w-[85vw] md:h-[10vh] md:left-[3%] md:text-[10px] md:justify-around">
             <h3 className="cursor-pointer">TERMOS E CONDIÇÕES</h3>
             <h3 className="cursor-pointer">POLÍTICA DE COOKIES</h3>
             <h3 className="cursor-pointer">POLÍTICA DE PRIVACIDADE</h3>
