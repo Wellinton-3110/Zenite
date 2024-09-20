@@ -19,6 +19,10 @@ import "./i18n";
 export const MyContext = createContext();
 
 function App() {
+  const [currentButtonText, setCurrentButtonText] = useState("VER MAIS");
+  const [footerContatos, setFooterContatos] = useState("CONTATOS");
+  const [footerVerNoMapa, setFooterVerNoMapa] = useState("VER NO MAPA");
+  const [footerSubscrever, setFooterSubscrever] = useState("SUBSCREVER");
   const [scrollY, setScrollY] = useState(0);
   const [resize, setResize] = useState(window.innerWidth);
   const { t } = useTranslation();
@@ -81,8 +85,6 @@ function App() {
   const buttonRef = useRef(null);
 
   function changeLanguageToPT() {
-    const myButton = buttonRef.current.querySelector("#myButton");
-
     const header2SobreNos =
       header2Ref.current.querySelector("#header2SobreNos");
 
@@ -214,6 +216,11 @@ function App() {
     footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_PT")}`;
     footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_PT")}`;
     footerH5Direitos.textContent = `${t("FOOTERDIREITOS_PT")}`;
+
+    setCurrentButtonText("VER MAIS");
+    setFooterContatos("CONTATOS");
+    setFooterVerNoMapa("VER NO MAPA");
+    setFooterSubscrever("SUBSCREVER");
   }
 
   function responsiveChangeLanguageToPT() {
@@ -345,6 +352,11 @@ function App() {
     footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_PT")}`;
     footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_PT")}`;
     footerH5Direitos.textContent = `${t("FOOTERDIREITOS_PT")}`;
+
+    setCurrentButtonText("VER MAIS");
+    setFooterContatos("CONTATOS");
+    setFooterVerNoMapa("VER NO MAPA");
+    setFooterSubscrever("SUBSCREVER");
   }
 
   function changeLanguageToEN() {
@@ -428,6 +440,8 @@ function App() {
     const footerH5Direitos =
       footerRef.current.querySelector("#footerH5Direitos");
 
+    const myButton = buttonRef.current.querySelector("#myButton");
+
     header2SobreNos.textContent = `${t("HEADER2_SOBRENOS_EN")}`;
     header2Conceito.textContent = `${t("HEADER2_CONCEITO_EN")}`;
     header2Unidades.textContent = `${t("HEADER2_UNIDADES_EN")}`;
@@ -473,6 +487,11 @@ function App() {
     footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_EN")}`;
     footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_EN")}`;
     footerH5Direitos.textContent = `${t("FOOTERDIREITOS_EN")}`;
+
+    setCurrentButtonText("SEE MORE");
+    setFooterContatos("CONTACTS");
+    setFooterVerNoMapa("SEE ON MAP");
+    setFooterSubscrever("SUBSCRIBE");
   }
 
   function responsiveChangeLanguageToEN() {
@@ -598,12 +617,18 @@ function App() {
     footerH3Privacidade.textContent = `${t("FOOTERPRIVACIDADE_EN")}`;
     footerH3Oportunidades.textContent = `${t("FOOTEROPORTUNIDADES_EN")}`;
     footerH5Direitos.textContent = `${t("FOOTERDIREITOS_EN")}`;
+
+    setCurrentButtonText("SEE MORE");
+    setFooterContatos("CONTACTS");
+    setFooterVerNoMapa("SEE ON MAP");
+    setFooterSubscrever("SUBSCRIBE");
   }
 
   return (
     <div className="Page flex flex-col w-[100vw]">
       <MyContext.Provider
         value={{
+          currentButtonText,
           header2Ref,
           buttonRef,
           navBarRef,
@@ -629,7 +654,12 @@ function App() {
         <Page4 page4Ref={page4Ref} />
         <Page5 page5Ref={page5Ref} />
         <Certificacoes certificacoesRef={certificacoesRef} />
-        <Footer footerRef={footerRef} />
+        <Footer
+          footerRef={footerRef}
+          footerSubscrever={footerSubscrever}
+          footerContatos={footerContatos}
+          footerVerNoMapa={footerVerNoMapa}
+        />
       </MyContext.Provider>
     </div>
   );

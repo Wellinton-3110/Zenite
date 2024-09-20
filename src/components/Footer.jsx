@@ -86,14 +86,14 @@ export function Footer(props) {
 
             <div className="flex absolute left-[15%] top-[60%] w-[210px] h-[30px] --responsive--> sm:left-[33%]">
               <div className="absolute top-[15%] w-[100px] cursor-pointer h-[28px] flex mr-[10px] items-center justify-center bg-white rounded-full text-[14px] text-[#41BDBA] font-mono --responsive--> tall:text-[12px] tall:w-[80px] tall:h-[25px]">
-                <h3 id="footerH3Contatos">CONTATOS</h3>
+                <h3 id="footerH3Contatos">{props.footerContatos}</h3>
               </div>
 
               <div
                 onClick={openModal}
                 className="absolute top-[15%] left-[50%] w-[100px] cursor-pointer h-[28px] flex items-center justify-center bg-white rounded-full text-[14px] text-[#41BDBA] font-mono --responsive--> tall:text-[12px] tall:w-[80px] tall:h-[25px]"
               >
-                <h3 id="footerH3Mapa">VER NO MAPA</h3>
+                <h3 id="footerH3Mapa">{props.footerVerNoMapa}</h3>
               </div>
             </div>
 
@@ -169,7 +169,7 @@ export function Footer(props) {
                 <SiMinutemailer className="w-5 h-5 [color:#3EB3B5] cursor-auto" />
               </div>
               <button className="w-[100px] h-[28px] relative left-[1%] top-[-10px] ml-[15px] mb-[20px] items-center justify-center bg-white rounded-full text-[14px] text-[#41BDBA] font-mono hidden --responsive--> md:block tall:text-[12px] tall:w-[80px] tall:h-[20px] tall:mt-[10px]">
-                <h3>SUBSCREVER</h3>
+                <h3>{props.footerSubscrever}</h3>
               </button>
             </div>
           </div>

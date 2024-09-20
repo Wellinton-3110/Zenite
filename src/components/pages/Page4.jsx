@@ -25,7 +25,6 @@ export function Page4(props) {
           {t("PAGE4H3_PT")}
         </h3>
         <Button
-          link="https://www.future-motion.eu/pt/agencia-de-investimento-e-desenvolvimento"
           text="text-[white]"
           background="bg-[#00AEAD]"
           positionX="left-[85%]"
